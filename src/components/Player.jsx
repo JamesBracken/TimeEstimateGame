@@ -2,10 +2,11 @@ import { useState, useRef } from 'react'
 
 export default function Player() {
   const playerName = useRef()
-  const [enteredPlayerName, setPlayerName] = useState('Unknown entity')
+  const [enteredPlayerName, setEnteredPlayerName] = useState('Unknown entity')
   
     function handleClick(){
-      setPlayerName(playerName.current.value)
+      setEnteredPlayerName(playerName.current.value)
+      playerName.current.value = ''
     }
 
   return (
