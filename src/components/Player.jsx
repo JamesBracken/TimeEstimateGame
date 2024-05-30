@@ -1,4 +1,4 @@
-import { useState, useRef } from 'react'
+import { useState, useRef, useImperativeHandle, forwardRef } from 'react'
 
 export default function Player() {
   const playerName = useRef()
